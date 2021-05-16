@@ -5,19 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana Speak</title>
-    <script
-            src="APP.JS" type="text/javascript">
-    </script>
+    <title>Yoda Speak</title>
+
+    <style>
+        textarea {
+            width: 90%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+
+        }
+        #output{
+            width: 90%;
+            height: 10vh;
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 1rem;
+
+        }
+    </style>
+
+
 </head>
 
 <body>
 
+    
 
-<h1>Banana Speak</h1>
+    <h1 id="head">Yoda Speak</h1>
 
+    <textarea id="txtinput"></textarea>
 
-<button id="tlt-button">Translate</button>
+    <button id="btn-translate">Translate</button>
+    <br></br>
+     <div style="font-size: larger;">The output will come here 👇</div>
+
+    <div id="output"></div>
+    <script src="APP.JS" type="text/javascript"></script>
+
 </body>
 
 </html>
