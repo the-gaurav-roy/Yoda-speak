@@ -8,6 +8,19 @@
     <title>Yoda Speak</title>
 
     <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px
+}
+
+:root {
+    --primary-color: #588443;
+    --off-white: #000000;
+    --dark-gray: #6B7280;
+}
+
         textarea {
             width: 90%;
             height: 10vh;
@@ -24,6 +37,29 @@
             padding: 1rem;
 
         }
+
+        .hero {
+    padding: 2rem;
+    padding-top: 5rem;
+    background-color: var(--primary-color);
+}
+
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--off-white);
+}
+
+
+
+.foot{
+    background-color: var(--primary-color);
+    color: black;
+    padding: 10rem;
+    border-bottom-left-radius: 1rem;
+}
+
     </style>
 
 
@@ -31,10 +67,10 @@
 
 <body>
 
-    
-
-    <h1 id="head">Yoda Speak</h1>
-
+    <header class="hero">
+        <h1 class="hero-heading">Yoda Speak</h1>
+    </header>
+    <div style="font-size: larger;">Type Input Here 👇</div>
     <textarea id="txtinput"></textarea>
 
     <button id="btn-translate">Translate</button>
@@ -42,7 +78,22 @@
      <div style="font-size: larger;">The output will come here 👇</div>
 
     <div id="output"></div>
+    
+    
+    <footer class= "foot">
+        
+        <div style="text-align: center;" class="nav-brand"><bold><h1>About Yoda Speak</h1></bold></div>
+        <p style="text-align: center;"> This web app will help you translate English to Yodish, basically how Yoda Speaks</p>
+
+    </footer>   
+    
+    
     <script src="APP.JS" type="text/javascript"></script>
+
+    
+
+
+
 
 </body>
 
